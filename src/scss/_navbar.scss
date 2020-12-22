@@ -4,8 +4,24 @@
     padding-bottom: 1rem;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
-    .navbar-brand {
+    .navbar-toggler {
+        padding: 0.2rem;
+        font-family: $headings-font-family;
+        font-size: 0.75rem;
         color: $white;
+        text-transform: uppercase;
+        background-color: $primary;
+        border: 0;
+    }
+    .navbar-brand {
+        color: $primary;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        letter-spacing: $headings-letter-spacing;
+        text-transform: uppercase;
+        img {
+            height: 7rem;
+        }
     }
     .navbar-nav {
         margin-top: 1rem;
@@ -35,6 +51,7 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         transition: padding-top 0.3s, padding-bottom 0.3s;
+        background-color: transparent;
         .navbar-brand {
             font-size: 1.75em;
             transition: font-size 0.3s;
@@ -56,8 +73,36 @@
     #mainNav.navbar-shrink {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out,
+        padding-bottom 0.3s ease-in-out;
         .navbar-brand {
             font-size: 1.5em;
+            transition: font-size 0.3s ease-in-out;
+            img {
+                height: 2rem;
+                transition: height 0.3s ease-in-out;
+            }
+        }
+        // Styling for when the navbar shrinks on larger screens
+        &.navbar-shrink {
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            background-color: $gray-900;
+            .navbar-brand {
+                font-size: 1.25em;
+                svg,
+                img {
+                    height: 6rem;
+                }
+            }
+        }
+        .navbar-nav .nav-item {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
