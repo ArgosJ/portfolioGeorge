@@ -10333,3 +10333,11 @@ section.services .feature-item i {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+section#about a {
+  color: #2C2B2B;
+  text-decoration: none;
+}
+section#about a:hover {
+  color: white;
+}

@@ -38,9 +38,9 @@ html(lang='en')
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Portfolio
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') About
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') Sobre Mí
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contact
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#services') Servicios
 
         // Masthead
         header.masthead.text-white.text-center
@@ -69,8 +69,8 @@ html(lang='en')
                             img.img-fluid.rounded-circle(src='assets/img/FOTO_PERSONAL/PERFIL_1.jpg', alt='Foto Personal')
                     .col-lg-6.order-lg-1
                         .p-5
-                            h2 Quién soy
-                            p Soy George Vicente, diseñador gráfico, retocador. Actualmente ofrezco mis servicios como diseñador gráfico Con el objetivo de ayudar a profesionales y emprendedores en todo lo Que puedan necesitar para la comunicación visual de sus Productos, servicios y/o marcas.
+                            h2.page-section-heading.text-center.text-uppercase Quién soy
+                            p.lead Soy George Vicente, diseñador gráfico, retocador. Actualmente ofrezco mis servicios como diseñador gráfico Con el objetivo de ayudar a profesionales y emprendedores en todo lo Que puedan necesitar para la comunicación visual de sus Productos, servicios y/o marcas.
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
@@ -127,11 +127,11 @@ html(lang='en')
                     //                i.fas.fa-plus.fa-3x
                     //        img.img-fluid(src='assets/img/portfolio/submarine.png', alt='')
 
-        section#services.services
+        section#services.services.page-section
             .container
                 .section-heading.text-center
-                    h2 ¿Qué es lo que hago?
-                    p.text-muted Mi método de trabajo se fundamenta en la colaboración con el cliente, tratando de crear una relación de confianza, de investigar y conocer sus necesidades para resolver cada uno de sus problemas de la forma más clara, simple y honesta. Si te gustan los trabajos que has podido ver en mi portfolio, no dudes en ponerte en contacto conmigo y seguro que encontramos la forma de poder trabajar juntos en un futuro proyecto o en lo que necesites.
+                    h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 ¿Qué es lo que hago?
+                    p.text-muted.teal.mt-2 Mi método de trabajo se fundamenta en la colaboración con el cliente, tratando de crear una relación de confianza, de investigar y conocer sus necesidades para resolver cada uno de sus problemas de la forma más clara, simple y honesta. Si te gustan los trabajos que has podido ver en mi portfolio, no dudes en ponerte en contacto conmigo y seguro que encontramos la forma de poder trabajar juntos en un futuro proyecto o en lo que necesites.
                     .divider-custom
                         .divider-custom-line
                         .divider-custom-icon
@@ -143,45 +143,32 @@ html(lang='en')
                             .row
                                 .col-lg-4
                                     .feature-item
-                                        i.icon-screen-smartphone.text-primary
+                                        img.icon-screen-smartphone.text-primary(src='assets/img/MIS_SERVICIOS/diseno-grafico.png', alt='' width="80")
                                         h3 Diseño Gráfico
                                         p.text-muted Todo lo que necesites para la comunicación visual de tu producto o empresa
                                 .col-lg-4
                                     .feature-item
-                                        i.icon-camera.text-primary
+                                        img.icon-screen-smartphone.text-primary(src='assets/img/MIS_SERVICIOS/marca.png', alt='' width="80")
                                         h3 Diseño de marcas
                                         p.text-muted La identidad para tu empresa y/o producto con la creatividad necesaria para destacar.
                                 .col-lg-4
                                     .feature-item
-                                        i.icon-present.text-primary
+                                        img.icon-screen-smartphone.text-primary(src='assets/img/MIS_SERVICIOS/redes-sociales.png', alt='' width="80")
                                         h3 Redes Sociales
                                         p.text-muted Presencia en internet y material para promocionar tus productos y servicios.
 
         // About Section
-        //section#about.page-section.bg-primary.text-white.mb-0
-        //    .container
-        //        // About Section Heading
-        //        h2.page-section-heading.text-center.text-uppercase.text-white About
-        //        // Icon Divider
-        //        .divider-custom.divider-light
-        //            .divider-custom-line
-        //            .divider-custom-icon
-        //                i.fas.fa-pencil-alt
-        //            .divider-custom-line
-        //        // About Section Content
-        //        .row
-        //            .col-lg-4.ml-auto
-        //                p.lead
-        //                    | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-        //            .col-lg-4.mr-auto
-        //                p.lead
-        //                    | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                //.text-center.mt-4
-                //    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                //        i.fas.fa-download.mr-2
-                //        | Free Download!
-
+        section#about.page-section.services.bg-primary.text-white.mb-0
+            .container
+                .section-heading.text-center.mb-0
+                    h2.text-white ¿Trabajamos juntos?
+                    .divider-custom
+                        .divider-custom-line
+                        .divider-custom-icon.text-white
+                            i.fas.fa-pencil-alt
+                        .divider-custom-line
+                    h3.text-muted
+                        a(href="mailto:guxdiart@outlook.com") guxdiart@outlook.com
         // Contact Section
         //section#contact.page-section
         //    .container
