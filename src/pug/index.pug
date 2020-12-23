@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Portafolio - George Vicente
+        title Portfolio - George Vicente
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
@@ -36,11 +36,13 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Portfolio
-                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') Sobre Mí
                         li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Portfolio
+                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#services') Servicios
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contacto
 
         // Masthead
         header.masthead.text-white.text-center
@@ -61,7 +63,7 @@ html(lang='en')
                     a.btn.btn-xl.btn-outline-light(href='/')
                         | ¿EN QUÉ PUEDO AYUDARTE?
 
-        section
+        section#about
             .container
                 .row.align-items-center
                     .col-lg-6
@@ -157,18 +159,40 @@ html(lang='en')
                                         h3 Redes Sociales
                                         p.text-muted Presencia en internet y material para promocionar tus productos y servicios.
 
-        // About Section
-        section#about.page-section.services.bg-primary.text-white.mb-0
+
+        // Contact
+        section#contact.page-section
+
             .container
                 .section-heading.text-center.mb-0
-                    h2.text-white ¿Trabajamos juntos?
+                    h2 ¿Trabajamos juntos?
                     .divider-custom
                         .divider-custom-line
                         .divider-custom-icon.text-white
                             i.fas.fa-pencil-alt
                         .divider-custom-line
-                    h3.text-muted
-                        a(href="mailto:guxdiart@outlook.com") guxdiart@outlook.com
+                .row.align-items-center
+                    .col-lg-6
+                        .map-responsive(style='height: 400px')
+                            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7809.532306835035!2d-77.0715469!3d-11.8516357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d7361b8040c3%3A0x14be301df67e118d!2sSanto%20Domingo%20De%20Copacabana!5e0!3m2!1ses-419!2spe!4v1608745358364!5m2!1ses-419!2spe', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+                    .col-lg-6.order-lg-1
+                        div
+                            p.lead No dudes de contactar conmigo, cada proyecto es un nuevo desafío para mi, no existen clientes grandes o pequeños, todos son importantes y todos reciben un servicio basado en la experiencia y la creatividad. Con un trato amable y cercano trataré de ser tu socio en busca de la mejor solución para la comunicación visual de tu producto o de tu empresa.
+                            p.lead Puedes escribir a guxdiart@outlook.com , llamarme al teléfono 957661820 o bien utilizar las vías de comunicación que nos ofrecen redes sociales como Facebook.
+                            p.lead Trataré de responder a tu mensaje con la mayor brevedad posible.
+                .row
+                    .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0.pt-2
+                        i.fas.fa-phone.fa-3x.mb-3.text-muted
+                        div 957661820
+                    .col-lg-4.mr-auto.text-center
+                        i.fas.fa-envelope.fa-3x.mb-3.text-muted
+
+                        // Make sure to change the email address in BOTH the anchor text and the link target below!
+                        a.d-block(href='mailto:guxdiart@outlook.com') guxdiart@outlook.com
+                    .col-lg-4.mr-auto.text-center
+                        i.fas.fa-map-marker-alt.fa-3x.mb-3.text-muted
+                        div Puente Piedra (Lima,Perú)
+
         // Contact Section
         //section#contact.page-section
         //    .container
@@ -430,3 +454,4 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
+
